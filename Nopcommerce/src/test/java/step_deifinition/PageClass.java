@@ -1,16 +1,10 @@
 package step_deifinition;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PageClass {
 	WebDriver driver;
@@ -110,7 +104,7 @@ public class PageClass {
 		Thread.sleep(2000);
 		
 		WebElement email_field=driver.findElement(email);
-		email_field.sendKeys("rugvedp1@gmail.com");
+		email_field.sendKeys("rugvedphadke39@gmail.com");
 		Thread.sleep(2000);
 		
 //		JavascriptExecutor js=(JavascriptExecutor)driver;
@@ -128,11 +122,11 @@ public class PageClass {
 	//create password
 	public void passwordMethod() throws InterruptedException {
 		WebElement pass=driver.findElement(password);
-		pass.sendKeys("Rabbit@99");
+		pass.sendKeys("Marvel@100");
 		Thread.sleep(2000);
 		
 		WebElement cnf_pass=driver.findElement(confirm_password);
-		cnf_pass.sendKeys("Rabbit@99");
+		cnf_pass.sendKeys("Marvel@100");
 		Thread.sleep(2000);
 	}
 	
@@ -158,14 +152,14 @@ public class PageClass {
 	public void enterEmail() {
 		WebElement el4=driver.findElement(email_login);
 		el4.click();
-		el4.sendKeys("rugvedp1@gmail.com");
+		el4.sendKeys("rugvedphadke39@gmail.com");
 //		el4.sendKeys(Keys.ENTER);
 	}
 	
 	//enter password
 	public  void enterPassword() {
 		WebElement el5=driver.findElement(password_login);
-		el5.sendKeys("Rabbit@99");
+		el5.sendKeys("Marvel@100");
 //		el5.sendKeys(Keys.ENTER);
 	}
 	
@@ -328,7 +322,7 @@ public class PageClass {
 	//enter email
 	public void enterMail() {
 		WebElement el9=driver.findElement(add_email);
-		el9.sendKeys("rugvedp1@gmail.com");
+		el9.sendKeys("rugvedphadke39@gmail.com");
 	}
 	
 	//enter company
@@ -396,19 +390,19 @@ public class PageClass {
 	//enter old password
 	public void enterOldPass() {
 		WebElement el17=driver.findElement(old_pass);
-		el17.sendKeys("Rabbit@99");
+		el17.sendKeys("Marvel@100");
 	}
 	
 	//enter old password
 	public void enterNewPass() {
 		WebElement el18=driver.findElement(new_pass);
-		el18.sendKeys("Rabbit@19");
+		el18.sendKeys("Thor$2000");
 	}
 	
 	//enter old password
 	public void enterConfirmPass() {
 		WebElement el19=driver.findElement(confirm_pass);
-		el19.sendKeys("Rabbit@19");
+		el19.sendKeys("Thor$2000");
 	}
 	
 	//click on change password button

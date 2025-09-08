@@ -5,4 +5,5 @@ When click on register button
 And enter the details
 And create new password
 And click on register
+And click on continue
 Then open home page

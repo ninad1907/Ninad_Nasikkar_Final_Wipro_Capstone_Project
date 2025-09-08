@@ -17,7 +17,7 @@ public class Step_Logout_ChangePassword {
 			driver=new ChromeDriver();
 		    driver.get("https://demo.nopcommerce.com/");
 		    driver.manage().window().maximize();
-		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));	
+		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));	
 		}
 
 		@When("login to nopcommerce")

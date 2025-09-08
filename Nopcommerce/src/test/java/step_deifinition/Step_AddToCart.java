@@ -17,7 +17,7 @@ public class Step_AddToCart {
 		driver=new ChromeDriver();
 	    driver.get("https://demo.nopcommerce.com/");
 	    driver.manage().window().maximize();
-	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));	
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));	
 	}
 
 	@When("search for a product")
