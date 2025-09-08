@@ -1,0 +1,224 @@
+Started by user Ninad Nasikkar
+Running as SYSTEM
+Building in workspace C:\Users\owner\.jenkins\workspace\Capstone Project
+[Capstone Project] $ cmd /c call C:\Users\owner\AppData\Local\Temp\jenkins15523729378108985729.bat
+
+C:\Users\owner\.jenkins\workspace\Capstone Project>cd C:\Users\owner\git\Ninad_Nasikkar_Final_Wipro_Capstone_Project\Nopcommerce 
+
+C:\Users\owner\git\Ninad_Nasikkar_Final_Wipro_Capstone_Project\Nopcommerce>mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< Capstone_Project:Nopcommerce >--------------------
+[INFO] Building Nopcommerce 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ Nopcommerce ---
+[INFO] Deleting C:\Users\owner\git\Ninad_Nasikkar_Final_Wipro_Capstone_Project\Nopcommerce\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Nopcommerce ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ Nopcommerce ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Nopcommerce ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 10 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ Nopcommerce ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 12 source files with javac [debug target 1.8] to target\test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] /C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/java/step_deifinition/TestRunner.java: C:\Users\owner\git\Ninad_Nasikkar_Final_Wipro_Capstone_Project\Nopcommerce\src\test\java\step_deifinition\TestRunner.java uses or overrides a deprecated API.
+[INFO] /C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/java/step_deifinition/TestRunner.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ Nopcommerce ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running step_deifinition.TestRunner
+
+Scenario: Validate Registration                            # file:///C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/resources/nopcommerce_features/01register.feature:2
+Sep 09, 2025 1:22:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 09, 2025 1:22:35 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given registration page should open in default browser # step_deifinition.Step_Register.registration_page_should_open_in_default_browser()
+  ✔ When click on register button                          # step_deifinition.Step_Register.click_on_register_button()
+  ✔ And enter the details                                  # step_deifinition.Step_Register.enter_the_details()
+  ✔ And create new password                                # step_deifinition.Step_Register.create_new_password()
+  ✔ And click on register                                  # step_deifinition.Step_Register.click_on_register()
+  ✔ And click on continue                                  # step_deifinition.Step_Register.click_on_coninue()
+registration successful
+  ✔ Then open home page                                    # step_deifinition.Step_Register.open_home_page()
+
+Scenario: Validate Login                            # file:///C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/resources/nopcommerce_features/02login.feature:2
+Sep 09, 2025 1:23:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 09, 2025 1:23:06 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given login page should open in default browser # step_deifinition.Step_Login.login_page_should_open_in_default_browser()
+  ✔ When click on login button                      # step_deifinition.Step_Login.click_on_login_button()
+  ✔ And enter the email address                     # step_deifinition.Step_Login.enter_the_email_address()
+  ✔ And enter password                              # step_deifinition.Step_Login.enter_password()
+  ✔ And click on login                              # step_deifinition.Step_Login.click_on_login()
+login successful
+  ✔ Then open new webpage                           # step_deifinition.Step_Login.open_new_webpage()
+
+Scenario: Validate Search                            # file:///C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/resources/nopcommerce_features/03search.feature:2
+Sep 09, 2025 1:23:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 09, 2025 1:23:45 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given search page should open in default browser # step_deifinition.Step_Search.search_page_should_open_in_default_browser()
+  ✔ When enter product names in searchbox            # step_deifinition.Step_Search.enter_product_names_in_searchbox()
+Searched successfully
+  ✔ Then display product lists                       # step_deifinition.Step_Search.display_product_lists()
+
+Scenario: Validate Add to cart                            # file:///C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/resources/nopcommerce_features/04add_to_cart.feature:2
+Sep 09, 2025 1:24:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 09, 2025 1:24:00 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given add to cart page should open in default browser # step_deifinition.Step_AddToCart.add_to_cart_page_should_open_in_default_browser()
+  ✔ When search for a product                             # step_deifinition.Step_AddToCart.search_for_a_product()
+  ✔ And click on add to cart button                       # step_deifinition.Step_AddToCart.click_on_add_to_cart_button()
+  ✔ And click on shopping cart button                     # step_deifinition.Step_AddToCart.click_on_shopping_cart_button()
+Product added to cart successfully
+  ✔ Then show the added product                           # step_deifinition.Step_AddToCart.show_the_added_product()
+
+Scenario: Validate delete from cart                            # file:///C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/resources/nopcommerce_features/05delete_from_cart.feature:2
+Sep 09, 2025 1:24:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 09, 2025 1:24:21 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given delete from cart page should open in default browser # step_deifinition.Step_DeleteFromCart.delete_from_cart_page_should_open_in_default_browser()
+  ✔ When Add the product to cart                               # step_deifinition.Step_DeleteFromCart.Add_the_product_to_cart()
+  ✔ And Click on shopping cart                                 # step_deifinition.Step_DeleteFromCart.click_on_shopping_cart()
+  ✔ And click on remove button                                 # step_deifinition.Step_DeleteFromCart.click_on_remove_button()
+product deleted successfully
+  ✔ Then product deleted successfully                          # step_deifinition.Step_DeleteFromCart.product_deleted_successfully()
+
+Scenario: Validate Currency selection                # file:///C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/resources/nopcommerce_features/06currency.feature:2
+Sep 09, 2025 1:25:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 09, 2025 1:25:33 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given Home page should open in default browser   # step_deifinition.Step_ChangeCurrency.home_page_should_open_in_default_browser()
+  ✔ When click on currency dropdown                  # step_deifinition.Step_ChangeCurrency.click_on_currency_dropdown()
+  ✔ And click on the euro option                     # step_deifinition.Step_ChangeCurrency.click_on_the_euro_option()
+Cuurencyy changed to euro
+  ✔ Then change the currency of all products to euro # step_deifinition.Step_ChangeCurrency.change_the_currency_of_all_products_to_euro()
+
+Scenario: Validate add to wishlist function           # file:///C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/resources/nopcommerce_features/07add_to_wishlist.feature:2
+Sep 09, 2025 1:25:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 09, 2025 1:25:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given product page should open in default browser # step_deifinition.Step_AddToWishlist.product_page_should_open_in_default_browser()
+  ✔ When search a product                             # step_deifinition.Step_AddToWishlist.search_a_product()
+  ✔ And click on the add to wishlist icon             # step_deifinition.Step_AddToWishlist.click_on_the_add_to_wishlist_icon()
+  ✔ And click on Wishlist option                      # step_deifinition.Step_AddToWishlist.click_on_wishlist_option()
+Added to wishlist...
+  ✔ Then display products in the wishlist             # step_deifinition.Step_AddToWishlist.display_products_in_the_wishlist()
+
+Scenario: Validate Social media                            # file:///C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/resources/nopcommerce_features/08social_media.feature:2
+Sep 09, 2025 1:26:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 09, 2025 1:26:14 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given Social media page should open in default browser # step_deifinition.Step_SocialMedia.social_media_page_should_open_in_default_browser()
+  ✔ When scroll to the footer section                      # step_deifinition.Step_SocialMedia.scroll_to_the_footer_section()
+  ✔ And click on facebook icon                             # step_deifinition.Step_SocialMedia.click_on_facebook_icon()
+Facebook page opened..
+  ✔ Then open facebook page of nopcommerce                 # step_deifinition.Step_SocialMedia.open_facebook_page_of_nopcommerce()
+  ✔ And click on x icon                                    # step_deifinition.Step_SocialMedia.click_on_x_icon()
+X page opened..
+  ✔ Then open x page of nopcommerce                        # step_deifinition.Step_SocialMedia.open_x_page_of_nopcommerce()
+  ✔ And click on instagram icon                            # step_deifinition.Step_SocialMedia.click_on_instagram_icon()
+Instagram page opened..
+  ✔ Then open instagram page of nopcommerce                # step_deifinition.Step_SocialMedia.open_instagram_page_of_nopcommerce()
+  ✔ And click on youtube icon                              # step_deifinition.Step_SocialMedia.click_on_youtube_icon()
+Youtube page opened..
+  ✔ Then open youtube page of nopcommerce                  # step_deifinition.Step_SocialMedia.open_youtube_page_of_nopcommerce()
+
+Scenario: Validate Update Address                     # file:///C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/resources/nopcommerce_features/09add_address.feature:2
+Sep 09, 2025 1:26:41 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 09, 2025 1:26:41 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given address page should open in default browser # step_deifinition.Step_AddAddress.address_page_should_open_in_default_browser()
+  ✔ When log in to nopcommerce website                # step_deifinition.Step_AddAddress.log_in_to_nopcommerce_website()
+  ✔ And click on my account button                    # step_deifinition.Step_AddAddress.click_on_my_account_button()
+  ✔ And click on addresses button                     # step_deifinition.Step_AddAddress.click_on_addresses_button()
+  ✔ And click on add new button                       # step_deifinition.Step_AddAddress.click_on_add_new_button()
+  ✔ And enter first name                              # step_deifinition.Step_AddAddress.enter_first_name()
+  ✔ And enter last name                               # step_deifinition.Step_AddAddress.enter_last_name()
+  ✔ And enter email address                           # step_deifinition.Step_AddAddress.enter_email_address()
+  ✔ And enter company                                 # step_deifinition.Step_AddAddress.enter_company()
+  ✔ And select country from dropdown                  # step_deifinition.Step_AddAddress.select_country_from_dropdown()
+  ✔ And select state from dropdown                    # step_deifinition.Step_AddAddress.select_state_from_dropdown()
+  ✔ And enter city                                    # step_deifinition.Step_AddAddress.enter_city()
+  ✔ And enter address line one                        # step_deifinition.Step_AddAddress.enter_address_line_one()
+  ✔ And enter address line two                        # step_deifinition.Step_AddAddress.enter_address_line_two()
+  ✔ And enter pincode                                 # step_deifinition.Step_AddAddress.enter_pincode()
+  ✔ And enter phone number                            # step_deifinition.Step_AddAddress.enter_phone_number()
+  ✔ And click on save button                          # step_deifinition.Step_AddAddress.click_on_save_button()
+New address added
+  ✔ Then new address added successfully               # step_deifinition.Step_AddAddress.new_address_added_successfully()
+
+Scenario: Validate change password and logout functionality   # file:///C:/Users/owner/git/Ninad_Nasikkar_Final_Wipro_Capstone_Project/Nopcommerce/src/test/resources/nopcommerce_features/10logout_change_password.feature:2
+Sep 09, 2025 1:27:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 09, 2025 1:27:25 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.81. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given change password page should open in default browser # step_deifinition.Step_Logout_ChangePassword.change_password_page_should_open_in_default_browser()
+  ✔ When login to nopcommerce                                 # step_deifinition.Step_Logout_ChangePassword.login_to_nopcommerce()
+  ✔ And click on my account option                            # step_deifinition.Step_Logout_ChangePassword.click_on_my_account_option()
+  ✔ And click on change password                              # step_deifinition.Step_Logout_ChangePassword.click_on_change_password()
+  ✔ And enter old password                                    # step_deifinition.Step_Logout_ChangePassword.enter_old_password()
+  ✔ And enter new password                                    # step_deifinition.Step_Logout_ChangePassword.enter_new_password()
+  ✔ And confirm password                                      # step_deifinition.Step_Logout_ChangePassword.confirm_password()
+  ✔ And click on change password button                       # step_deifinition.Step_Logout_ChangePassword.click_on_change_password_button()
+Password changed successfully
+  ✔ Then password changed successfully                        # step_deifinition.Step_Logout_ChangePassword.password_changed_successfully()
+  ✔ And click on logout button                                # step_deifinition.Step_Logout_ChangePassword.click_on_logout_button()
+Logged out successfully
+Sep 09, 2025 1:28:08 AM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+  ✔ Then logged out of nopcommerce                            # step_deifinition.Step_Logout_ChangePassword.logged_out_of_nopcommerce()
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 338.7 s -- in step_deifinition.TestRunner
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  05:49 min
+[INFO] Finished at: 2025-09-09T01:28:09+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
