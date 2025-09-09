@@ -1,0 +1,12 @@
+step_deifinition\Step_Login.class
+step_deifinition\Step_AddToWishlist.class
+step_deifinition\PageClass.class
+step_deifinition\Step_Search.class
+step_deifinition\Step_Register.class
+step_deifinition\Step_DeleteFromCart.class
+step_deifinition\Step_ChangeCurrency.class
+step_deifinition\Step_SocialMedia.class
+step_deifinition\Step_AddToCart.class
+step_deifinition\Step_Logout_ChangePassword.class
+step_deifinition\TestRunner.class
+step_deifinition\Step_AddAddress.class
