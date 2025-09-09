@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="336.448" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-09-08T19:52:31.784090300Z">
+<testcase classname="Check user is able to register using correct details" name="Validate Registration" time="31.67">
+<system-out><![CDATA[
+Given registration page should open in default browser......................passed
+When click on register button...............................................passed
+And enter the details.......................................................passed
+And create new password.....................................................passed
+And click on register.......................................................passed
+And click on continue.......................................................passed
+Then open home page.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check user is able to login with valid credentials" name="Validate Login" time="39.948">
+<system-out><![CDATA[
+Given login page should open in default browser.............................passed
+When click on login button..................................................passed
+And enter the email address.................................................passed
+And enter password..........................................................passed
+And click on login..........................................................passed
+Then open new webpage.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check user is able to search products" name="Validate Search" time="13.568">
+<system-out><![CDATA[
+Given search page should open in default browser............................passed
+When enter product names in searchbox.......................................passed
+Then display product lists..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check user is able to add products to cart" name="Validate Add to cart" time="20.746">
+<system-out><![CDATA[
+Given add to cart page should open in default browser.......................passed
+When search for a product...................................................passed
+And click on add to cart button.............................................passed
+And click on shopping cart button...........................................passed
+Then show the added product.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check user is able to delete products from cart" name="Validate delete from cart" time="72.699">
+<system-out><![CDATA[
+Given delete from cart page should open in default browser..................passed
+When Add the product to cart................................................passed
+And Click on shopping cart..................................................passed
+And click on remove button..................................................passed
+Then product deleted successfully...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check user is able to change the currency" name="Validate Currency selection" time="10.082">
+<system-out><![CDATA[
+Given Home page should open in default browser..............................passed
+When click on currency dropdown.............................................passed
+And click on the euro option................................................passed
+Then change the currency of all products to euro............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check user is able to add product to wishlist" name="Validate add to wishlist function" time="30.901">
+<system-out><![CDATA[
+Given product page should open in default browser...........................passed
+When search a product.......................................................passed
+And click on the add to wishlist icon.......................................passed
+And click on Wishlist option................................................passed
+Then display products in the wishlist.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check user is able to open social media pages of nopcommerce" name="Validate Social media" time="25.34">
+<system-out><![CDATA[
+Given Social media page should open in default browser......................passed
+When scroll to the footer section...........................................passed
+And click on facebook icon..................................................passed
+Then open facebook page of nopcommerce......................................passed
+And click on x icon.........................................................passed
+Then open x page of nopcommerce.............................................passed
+And click on instagram icon.................................................passed
+Then open instagram page of nopcommerce.....................................passed
+And click on youtube icon...................................................passed
+Then open youtube page of nopcommerce.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check user is able to add new address" name="Validate Update Address" time="46.504">
+<system-out><![CDATA[
+Given address page should open in default browser...........................passed
+When log in to nopcommerce website..........................................passed
+And click on my account button..............................................passed
+And click on addresses button...............................................passed
+And click on add new button.................................................passed
+And enter first name........................................................passed
+And enter last name.........................................................passed
+And enter email address.....................................................passed
+And enter company...........................................................passed
+And select country from dropdown............................................passed
+And select state from dropdown..............................................passed
+And enter city..............................................................passed
+And enter address line one..................................................passed
+And enter address line two..................................................passed
+And enter pincode...........................................................passed
+And enter phone number......................................................passed
+And click on save button....................................................passed
+Then new address added successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Check user is able to change password and logout" name="Validate change password and logout functionality" time="44.45">
+<system-out><![CDATA[
+Given change password page should open in default browser...................passed
+When login to nopcommerce...................................................passed
+And click on my account option..............................................passed
+And click on change password................................................passed
+And enter old password......................................................passed
+And enter new password......................................................passed
+And confirm password........................................................passed
+And click on change password button.........................................passed
+Then password changed successfully..........................................passed
+And click on logout button..................................................passed
+Then logged out of nopcommerce..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
